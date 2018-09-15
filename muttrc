@@ -1,0 +1,32 @@
+# Mutt Configuration file for SDU e-mail account
+
+# CONNECTION
+set ssl_use_sslv3=yes
+set ssl_force_tls=yes
+set ssl_starttls=yes
+
+# OUTGOING MAIL
+set from="nasur18@student.sdu.dk"	# replace with your username here
+set realname="Name Surname"	# replace with your name here
+set smtp_pass="MyPassword"	# replace with your password here
+
+# SDU SERVER
+set smtp_authenticators="login"
+set smtp_url="smtp://nasur18@smtps.sdu.dk:587/"	# Replace with your username
+
+# INCOMING MAIL
+set imap_user = "nasur18@student.sdu.dk"	# Replace with your username
+set imap_pass = "MyPassword"			# Replace with your password
+set folder = "imaps://sync.sdu.dk:993"
+set spoolfile="imaps://sync.sdu.dk/INBOX"
+set postponed="imaps://sync.sdu.dk/Drafts"
+set record="imaps://sync.sdu.dk/Sent"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+
+set move = no
+
+# HTML VIEW CONFIGURATION
+auto_view text/html                                      
+alternative_order text/plain text/enriched text/html     
