@@ -4,10 +4,15 @@ Configuring SDU e-mail to be able to open it, read and send mails form the comma
 
 For tutorials and man pages visit [Mutt's website](http://www.mutt.org/)
 
-#### Installing mutt:
+#### Installation & preparation:
+
+Install mutt and create main directories:
 
 ```sh
 $ sudo apt-get install mutt
+$ sudo mkdir ~/.mutt/cache/headers
+$ sudo mkdir ~/.mutt/cache/bodies
+$ sudo touch ~/.mutt/certificates
 ```
 
 #### Configuration for SDU-account
